@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="content_description_small_poster">Poster of the movie</string>
+    <string name="text_view_top_rated">High-Rated</string>
+    <string name="text_view_most_popular">Popular</string>
+    <string name="content_description_image_view_big_poster">Big poster</string>
+    <string name="content_description_image_view_add_to_favourite">Add or remove from favourite</string>
+    <string name="menu_item_to_main">Home</string>
+    <string name="menu_item_to_favourite">Favourite</string>
+    <string name="content_description_image_view_play">Play trailer</string>
+    <string name="text_view_label_title">Title:</string>
+    <string name="text_view_label_original_title">Original title:</string>
+    <string name="text_view_label_rating">Rating:</string>
+    <string name="text_view_label_release_date">Release date:</string>
+    <string name="text_view_label_overview">Overview:</string>
+</resources>

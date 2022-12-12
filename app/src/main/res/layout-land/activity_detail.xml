@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageViewBigPoster"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/content_description_image_view_big_poster"
+        android:src="@android:drawable/ic_menu_info_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollViewMovieInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:layout_constraintStart_toEndOf="@id/imageViewBigPoster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include
+            android:id="@+id/movie_info"
+            layout="@layout/movie_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageViewAddToFavourite"
+        android:layout_width="@dimen/size_of_small_star"
+        android:layout_height="@dimen/size_of_small_star"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/content_description_image_view_add_to_favourite"
+        android:onClick="onClickChangeFavourite"
+        android:src="@drawable/favourite_yellow_star"
+        app:layout_constraintEnd_toEndOf="@id/imageViewBigPoster"
+        app:layout_constraintTop_toTopOf="@id/imageViewBigPoster" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
